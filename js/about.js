@@ -14,6 +14,10 @@ $('document').ready(function(){
 		e.preventDefault();
 		$('html,body').animate({scrollTop:0}, 1000);
 	});
+	$('.go-top').click(function(e) { /*點擊.go-top前往頁首*/
+		e.preventDefault();
+		$('html,body').animate({scrollTop:0}, 1000);
+	});
 	
 
 	/* 任何href包含.scrollTo屬性之元件皆套用效果*/
