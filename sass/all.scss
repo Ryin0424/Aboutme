@@ -145,8 +145,12 @@
       width: 100%;
       padding: 0 5px;
     }
-    .img,.main{
+    .main{
       float: none;
+    }
+    .img{
+      float: none;
+      height: 300px;
       .photo{
         background: url(../img/R-yin_mob.png) no-repeat right center;
         background-size: cover;
