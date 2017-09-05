@@ -14,6 +14,7 @@ $('document').ready(function(){
 		e.preventDefault();
 		$('html,body').animate({scrollTop:0}, 1000);
 	});
+	
 
 	/* 任何href包含.scrollTo屬性之元件皆套用效果*/
 	$('.scrollTo').click(function(e){ /* 動畫移動到指定地點 */
@@ -33,7 +34,7 @@ $('document').ready(function(){
 		var windowHeight = $(window).height(); // 取得目前視窗(於卷軸高度中的)位置(高度)
 
 		/* 處理header變化 */
-		if(scrollPos<100){ /* 當畫面置頂時，header高100，無底線；h1及menu水平置中*/
+		if(scrollPos<50){ /* 當畫面置頂時，header高100，無底線；h1及menu水平置中*/
 			$('.header').css({'height':'100px',
 							  'border-bottom':'none',
 							  'background-color':'rgba(62, 62, 62, 0.88)'})
@@ -50,7 +51,7 @@ $('document').ready(function(){
 								   'border-top':'1px solid rgba(245, 245, 245, 0.75)',})
 			$('.menu-mobile li a').css({'color':'#fff'})					   
 		}
-		if(scrollPos>100){ /* 當畫面離開頂部，header縮小，增加底線；h1及menu水平置中*/
+		if(scrollPos>50){ /* 當畫面離開頂部，header縮小，增加底線；h1及menu水平置中*/
 			$('.header').css({'height':'70px',
 							  'border-bottom':'1px solid #333',
 							  'background-color':'#fff'})
