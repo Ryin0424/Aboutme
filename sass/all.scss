@@ -58,7 +58,7 @@
         background: url(../img/R-yin.png) no-repeat right center;
         background-size: cover;
         transition: all 0.3s;
-        &:hover{
+        &:hover,&:active{
             transform: rotate(-2deg) scale(1.1, 1.1);
         }
       }
@@ -103,15 +103,15 @@
       right: 309px;
       z-index: -1;
     }
-    &:hover{
+    &:hover,&:active{
       -webkit-transform: scale(1.08, 1.08);
       transform: scale(1.08, 1.08);
       box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5);
     }
-    &:hover > .box-moving_1{
+    &:hover > .box-moving_1,&:active > .box-moving_1{
       top: -100%;
     }
-    &:hover > .box-moving_2{
+    &:hover > .box-moving_2,&:active > .box-moving_2{
       top: 0;
     }
     .box-moving_1{
@@ -211,7 +211,7 @@
         opacity: 0;
         transition: all 0.6s ease;
       }
-      &:hover{
+      &:hover,&:active{
         opacity: 1;    
         p{
           opacity: 1;
