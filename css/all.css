@@ -506,9 +506,12 @@ body, html {
   #about .info {
     width: 100%;
     padding: 0 5px; }
-  #about .img, #about .main {
+  #about .main {
     float: none; }
-    #about .img .photo, #about .main .photo {
+  #about .img {
+    float: none;
+    height: 300px; }
+    #about .img .photo {
       background: url(../img/R-yin_mob.png) no-repeat right center;
       background-size: cover; }
   #about .info_box {
