@@ -1,0 +1,367 @@
+@import '_Reset.scss';
+@import '_color.scss';
+@import '_animation.scss'; // 各類動畫
+@import 'Mixin/_info-box.scss'; // info-box
+@import 'Mixin/_linear-gradient.scss'; // 漸層渲染
+@import '_body.scss'; // box-sizing
+@import '_header.scss';
+@import '_Parallax.scss'; //滾動視差效果
+@import '_rotate.scss'; // 斜視效果
+@import '_gotop.scss';
+@import '_footer.scss';
+
+
+/*排版**/
+.container{ //僅用來給予排版範圍
+  // border: 1px solid green; //標示盒模型
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 15px;
+  .title{ //標題
+    @include title;
+  }
+}
+@media (max-width: 992px) {
+  .container{ 
+    max-width: 970px;
+  }
+}
+@media (max-width: 768px) {
+  .container{
+    max-width: 750px;
+  }
+}
+
+#about{ //讓menu指定的區塊
+  @include content_box;
+  @include linear-gradient(#fff, $gradient_color);
+  margin: -5px 0; //消除與solgan之間莫名的白色隔閡
+  // background-color: $main_color;
+  .info{
+    margin-top: 1.5em;
+    margin-bottom: 3.5em;
+    // width: 50%;
+    padding: 0 30px;
+  }
+  .img{
+      float: left;
+      text-align: center;
+      margin-top: 50px;
+      width: 40%;
+      height: 600px;
+      .photo{
+        display: inline-block;
+        width: 100%;
+        height: inherit;
+        padding: 0;
+        border-radius: 10px;
+        background: url(../img/R-yin.png) no-repeat right center;
+        background-size: cover;
+        transition: all 0.3s;
+        &:hover{
+            transform: rotate(-2deg) scale(1.1, 1.1);
+        }
+      }
+  }
+  .main{
+      float: right;
+      width: 60%;
+      font-size: 18px;
+      color: #333;
+      line-height: 25px;
+      .point{
+        font-weight: 700;
+        margin-bottom: 20px; 
+      }
+      .summary{ // #about .main .summary
+        margin-bottom: 20px;
+      }
+  }
+  .info_box{
+    float: left;
+    width: 32%;
+    background-color: #d6d4e7;
+    margin-left: 2%;
+    &:first-child{
+      margin-left: 0;
+    }
+    height: 100px;
+    // width: 100%;
+    position: relative; //建立main位移基準點
+    z-index: 1;
+    overflow: hidden; //main若超過範圍則隱藏 
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease; //呈現動畫效果
+    &:after{ // 背景圈
+      content: "";
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+      background: rgba(192, 192, 192, 0.6);
+      position: absolute;
+      bottom: 0;
+      right: 309px;
+      z-index: -1;
+    }
+    &:hover{
+      -webkit-transform: scale(1.08, 1.08);
+      transform: scale(1.08, 1.08);
+      box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5);
+    }
+    &:hover > .box-moving_1{
+      top: -100%;
+    }
+    &:hover > .box-moving_2{
+      top: 0;
+    }
+    .box-moving_1{
+      @include box_moving(0);
+    }
+    .box-moving_2{
+      @include box_moving(100%);
+    }
+    i{ 
+      @include box_text;
+      font-size: 48px;
+      color: #666;
+    }
+    p,a{ //.box-moving_2中的文字
+      @include box_text;
+      font-size: 24px;
+      color: #222;
+      padding: 15px;
+    }
+  }  
+  .school{
+    span{
+      font-size: 18px;
+      color: #666;
+    }
+  }
+}
+@media (max-width: 768px) {
+  #about{
+    .info{
+      width: 100%;
+      padding: 0 5px;
+    }
+    .img,.main{
+      float: none;
+      .photo{
+        background: url(../img/R-yin_mob.png) no-repeat right center;
+        background-size: cover;
+      }
+    }
+    .info_box{
+      float: none;
+      width: 100%;
+      margin-bottom: 3%;
+      margin-left: 0;
+      &:after{
+        display: none;
+      }
+    }
+  }
+}
+
+#works{
+  @include content_box;
+  background-color:rgb(235, 235, 235);
+  ul{
+    margin-top: 50px;
+    &:after{
+      content: '';
+      display: block;
+      clear: both;
+    }
+  }
+  /*作品列表*/
+  li{
+    float: left;
+    width: 33.3333%;
+    height: 200px;
+    padding: 0 5px;
+    // background-color: #b3ffb3;
+    transition: all 0.8s ease;      
+    .cover{
+      width: 100%;
+      height: inherit;
+      position: relative;
+      top: 0;
+      left: 0;
+      background-color: rgba(0,0,0,0.3);
+      opacity: 0;
+      transition: all 0.8s ease; 
+      p{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        font-size: 24px;
+        color: #ebebeb;
+        font-weight: 800;
+        text-shadow: 0px 0px 10px #e51f1f;
+        text-align: center;
+        // line-height: 200px;
+        opacity: 0;
+        transition: all 0.6s ease;
+      }
+      &:hover{
+        opacity: 1;    
+        p{
+          opacity: 1;
+        }
+      }
+    }
+  }
+  .coffee{
+    background: url(../img/Lorem-Coffee.jpg) center center no-repeat;
+  }
+  .travel{
+    background: url(../img/Travel.jpg) center center no-repeat;
+  }
+  .bmi{
+    background: url(../img/BMI.jpg) center center no-repeat;
+  }
+  p{
+    padding-top: 1em;
+    font-size: 4em;
+    font-weight: 800;
+    text-align: center;
+  }
+}
+@media (max-width: 992px) {
+  #works{
+    li{
+      float: none;
+      width: 100%;
+      margin-bottom: 4%;
+    }
+  }
+}
+
+#skills{
+  @include content_box;
+  padding: 60px 50px;
+  width: auto;
+  @include linear-gradient($gradient_color , $gradient_color_2);
+  background: linear-gradient(45deg,$gradient_color , $gradient_color_2);
+  .main-half{
+    width: 50%;
+    float: left;
+    padding: 15px;
+    color: #fff;
+    p{
+      font-size: 18px;
+      padding: 15px 20px;
+      // text-shadow: 0px 0px 5px #484848;
+      &:first-child{
+        margin-top: 40px;
+      }
+    }
+    li{
+      margin-bottom: 20px;
+    }
+  }
+  //** Progress bar **//
+  .progress {
+    margin-top: 5px;
+    height: $progress-height;
+    overflow: hidden;
+    background-color: rgba(#fafafa, .45);
+    border-radius: 3px;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+    position: relative;
+  }
+  .progress-bar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 0;
+    font-size: 12px;
+    line-height: $progress-height;
+    color: #fff;
+    text-align: center;
+    background-color: $progress-color;
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+    transition: width 1.5s ease;
+  }  
+}
+@media (max-width: 768px) {
+  #skills{
+    .main-half{
+      width: 100%;
+      float: none;
+      margin-bottom: 2em;
+      p:first-child{
+        margin-top: 0;
+      }
+    }
+    ul.main-half{
+      margin-bottom: 0;
+    }
+  }
+}
+
+
+#contact{
+  @include content_box;
+  background-color:$main_color;
+  #map{
+    width: 100%;
+    height: 400px;
+  }
+  .liaise{
+    text-align: center;
+    a{
+      margin: 30px 40px 0 40px;
+      display: inline-block;
+      height: 60px;
+      width: 60px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 56px;
+      font-size: 30px;
+      color: #ebebeb;
+      border: 2px solid #ebebeb;
+      box-sizing: border-box;
+      transition: all 0.8s;
+      &:hover,&:active{
+        background: #ebebeb;
+        transform: rotate(-360deg);
+      }
+      &:hover>.fa-facebook,&:active.fa-facebook{
+        color: #0066cc;
+      }
+      &:hover>.fa-envelope-o,&:active.fa-envelope-o{
+        color: #222;
+      }
+      &:hover>.fa-github,&:active.fa-github{
+        color: #600080;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  #contact{
+    .wrap{
+      padding: 15px 0;
+    }
+  }
+}
+
+
+
+
+.wrap{
+  margin: 0px auto;
+  padding: 15px;
+}
+
+.wrap:after{ //清除浮動
+  display: table;
+  content: "";
+  clear: both;
+}

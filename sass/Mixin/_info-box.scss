@@ -1,0 +1,66 @@
+@mixin content_box{
+  width: 100%;
+  height: auto;
+  padding: 50px 0;
+}
+
+@mixin fa_bg($fs,$w,$h:$w){ //fa icon之背景
+    text-align: center;//使圓中字置中
+    font-size: $fs;
+    width: $w;
+    height: $h;
+    line-height: $h;
+    color: #fff;
+    background-color: rgba(111, 125, 164, 0.71);
+    border: rgba(111, 125, 164, 0.71);
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%;
+    // transition: all ease 0.3s;
+    // -moz-transition: all ease 0.3s;
+    // -webkit-transition: all ease 0.3s;
+    // -o-transition: all ease 0.3s;
+    // -ms-transition: all ease 0.3s;
+}
+@mixin box_moving($top){ //盒中文字上移動畫
+  height: 100%;
+  width: 100%; //撐滿box
+  position: absolute;
+  top: $top; //設定位移起始位置
+  left: 0;
+  -webkit-transition: all 1s ease; //上移動畫效果
+  transition: all 1s ease;
+}
+@mixin box_text{ //讓盒中文字置中
+  text-align: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+@mixin title{  // ID標題(含fa)* 
+  text-align: center;
+  .icon_title{
+    margin: 1em auto; 
+    @include fa_bg(40px,80px); // 導入mixin
+  }
+  h2{
+    margin-top: 1em;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: #121212;
+    padding-bottom: 3%;
+    span/*about字樣*/{ 
+      padding: 0 10px;    
+      text-align: center;
+      background-color: rgba(59,63,80,0.6);
+      color: #fff;
+      border-radius: 6px;
+    }
+  }
+}
+/*Progress*/
+$progress-height: 20px;

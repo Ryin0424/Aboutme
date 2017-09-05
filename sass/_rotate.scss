@@ -1,0 +1,9 @@
+.rotate {
+  transform: rotate(-7deg);
+  margin-left: -80px;
+  margin-right: -80px;
+  padding: 35px 80px 35px 80px;
+  .rotate-text{
+    transform: rotate(7deg);
+  }
+}

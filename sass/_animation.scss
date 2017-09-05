@@ -1,0 +1,62 @@
+/*- - animation - -*/
+@-o-keyframes UpDown {
+  0% {
+    bottom: 90px; }
+  50% {
+    bottom: 50px; }
+  100% {
+    bottom: 90px; } }
+@-ms-keyframes UpDown {
+  0% {
+    bottom: 90px; }
+  50% {
+    bottom: 50px; }
+  100% {
+    bottom: 90px; } }
+@-moz-keyframes UpDown {
+  0% {
+    bottom: 90px; }
+  50% {
+    bottom: 50px; }
+  100% {
+    bottom: 90px; } }
+@-webkit-keyframes UpDown {
+  0% {
+    bottom: 90px; }
+  50% {
+    bottom: 50px; }
+  100% {
+    bottom: 90px; } }
+@keyframes UpDown {
+  0% {
+    bottom: 90px; }
+  50% {
+    bottom: 50px; }
+  100% {
+    bottom: 90px; } }
+
+/* animated */
+
+.animated{
+  opacity: 0;
+  transition: all 1.5s;
+}
+
+.fadeOut-Down{
+  transform: translateY(50px);
+}
+.fadeOut-Up{
+  transform: translateY(-50px);
+}
+.fadeOut-Right{
+  transform: translateX(50px);
+}
+.fadeOut-Left{
+  transform: translateX(-50px);
+}
+
+.fadeIn{
+  opacity: 1;
+  transform: translateY(0);
+  transform: translateX(0) ;
+}
