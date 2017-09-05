@@ -20,6 +20,14 @@
     <!--載入JS(jQuery)核心-->
     <script src="js/about.js"></script>
     <!--載入自定義的jQuery檔-->
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#3e3e3e">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#3e3e3e">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#3e3e3e">
+
 </head>
 
 <body>
@@ -27,7 +35,7 @@
         <div class="header" id="header">
             <h1>LOGO</h1>
             <ul class="menu">
-                <li><a href=".slogan" class="scrollTo">HOME</a></li>
+                <li><a id="go-top">HOME</a></li>
                 <li><a href="#about" class="scrollTo">ABOUT</a></li>
                 <li><a href="#works" class="scrollTo">WORKS</a></li>
                 <li><a href="#skills" class="scrollTo">SKILLS</a></li>
@@ -35,15 +43,13 @@
             </ul>
             <div class="fa fa-bars""></div>
             <ul class="menu-mobile">
-                <li><a href="#" class="scrollTo">HOME</a></li>
+                <li><a id="go-top">HOME</a></li>
                 <li><a href="#about" class="scrollTo">ABOUT</a></li>
                 <li><a href="#works" class="scrollTo">WORKS</a></li>
                 <li><a href="#skills" class="scrollTo">SKILLS</a></li>
                 <li><a href="#contact" class="scrollTo">CONTACT</a></li>
             </ul>
         </div>
-
-
         <div class="slogan">
             <img src="img/stairway-828883_1921.jpg" alt="Keep trying">
             <span>Keep trying<br>
@@ -55,8 +61,6 @@
             </div>
         </div>
         <div class="content">
-
-
             <section id="about">
                 <div class="container">
                     <div class="title">
@@ -102,8 +106,6 @@
                     </div>
                 </div>
             </section>
-
-
             <section id="works">
                 <div class="container">
                     <div class="title">
@@ -112,36 +114,29 @@
                         </div>
                         <h2>MY <span>WORKS</span></h2>
                     </div>
-
                     <div class="wrap animated fadeOut-Down">
                         <ul>
-
                             <a href="https://ryin0424.github.io/loremcoffee/" target="_blank"><li class="coffee">
                                 <div class="cover" title="點此新分頁開啟">
                                     <p>Lorem Coffee</p>
                                 </div>
                                 
                             </li></a>
-
                             <a href="https://ryin0424.github.io/TRAVEL/" target="_blank"><li class="travel">
                                 <div class="cover" title="點此新分頁開啟">
                                     <p>Travel</p>
                                 </div>
                             </li></a>
-
                             <a href="https://ryin0424.github.io/BMI-Calculator/" target="_blank"><li class="bmi">
                                 <div class="cover" title="點此新分頁開啟">
                                     <p>BMI Calculator</p>
                                 </div>
                             </li></a>
-
                         </ul>
-
                         <p>Still working...</p>
                     </div>
                 </div>
             </section>
-
             <section class="ditch"></section>
             
             <section id="skills" class="rotate">
@@ -152,7 +147,6 @@
                         </div>
                         <h2>MY <span>SKILLS</span></h2>
                     </div>
-
                     <div class="wrap">
                         <div class="main-half animated fadeOut-Up">
                             <p class="summary">Html：稍微涉略Pug(Jade)</p>
@@ -205,9 +199,7 @@
                     </div>
                 </div>
             </section>
-
             <section class="ditch"></section>
-
             <section id="contact">
                 <div class="container">
                     <div class="title">
@@ -227,7 +219,6 @@
                     </div>
                 </div>
             </section>
-
             <div class="footer">
                 <div id="go-top" title="回到頂端"><i class="fa fa-angle-up"></i></div>
                 <div class="copyright">
@@ -237,5 +228,4 @@
         </div>
     </div>
 </body>
-
 </html>
