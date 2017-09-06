@@ -166,7 +166,7 @@ body, html {
       -webkit-transition: all 0.3s;
       -o-transition: all 0.3s;
       transition: all 0.3s; }
-      #header .menu li a:hover {
+      #header .menu li a:hover, #header .menu li a:active {
         color: #ce9808 !important; }
   #header .fa-bars {
     display: none;
@@ -181,7 +181,7 @@ body, html {
     padding: 10px;
     border: 1px solid #fff;
     border-radius: 5px; }
-    #header .fa-bars:hover {
+    #header .fa-bars:hover, #header .fa-bars:active {
       color: #cf9a07 !important;
       border: 1px solid #cf9a07 !important; }
   #header .menu-mobile {
@@ -202,7 +202,7 @@ body, html {
       #header .menu-mobile li a {
         padding: 15px;
         color: #fff; }
-        #header .menu-mobile li a:hover {
+        #header .menu-mobile li a:hover, #header .menu-mobile li a:active {
           -webkit-transition: all 0.2s;
           -o-transition: all 0.2s;
           transition: all 0.2s;
@@ -247,7 +247,7 @@ body, html {
   .slogan .go-next a {
     color: #fff;
     font-size: 4.5em; }
-    .slogan .go-next a:hover {
+    .slogan .go-next a:hover, .slogan .go-next a:active {
       color: #e6b772; }
 
 @media (max-width: 992px) {
@@ -314,7 +314,7 @@ body, html {
   #go-top i {
     font-size: 2.5em;
     padding: 0 17.1px; }
-  #go-top:hover {
+  #go-top:hover, #go-top:active {
     background: #cf9a07;
     color: #222; }
 
