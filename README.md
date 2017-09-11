@@ -33,22 +33,22 @@
 
 ## 作品
 
-* R-yin 我的前端路 - https://ryin0424.github.io/Aboutme/
+#### R-yin 我的前端路 - https://ryin0424.github.io/Aboutme/
 #### 個人簡歷
-- 使用 SCSS 編譯
-- 利用 jQuery 製作簡易動畫效果
-- 自刻 RWD版型
+-使用 SCSS 編譯
+-利用 jQuery 製作簡易動畫效果
+-自刻 RWD版型
 
-* Lorem Coffee - https://ryin0424.github.io/loremcoffee/
+#### Lorem Coffee - https://ryin0424.github.io/loremcoffee/
 #### 首支RWD自刻版練習
-- 自刻 RWD版型
+-自刻 RWD版型
 
-* TRAVE - https://ryin0424.github.io/TRAVEL/
+#### TRAVE - https://ryin0424.github.io/TRAVEL/
 #### Card mode、grid 練習
-- 首次嘗試grid管理float
+-首次嘗試grid管理float
 
-* BMI Calculator- https://ryin0424.github.io/BMI-Calculator/
+#### BMI Calculator- https://ryin0424.github.io/BMI-Calculator/
 #### JS、JSON練習
-- JS迴圈練習
-- 利用JSON儲存資料進local Storage
+-JS迴圈練習
+-利用JSON儲存資料進local Storage
 
