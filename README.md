@@ -20,10 +20,10 @@
 
 ### Javascript/Framework
 
-* 對原生 Javascript 有基礎的了解，目前針對Vue.js學習中。
-* CSS Framework - 對 BootStrap 、 Pure.css 有初步的認知。
+* 對原生 Javascript 有基礎的了解；目前針對Vue.js學習中。
+* 了解 JSON/Ajax ，會串接第三方 API (Google Map、OPEN DATA)。
 * jQuery - 可使用 jQuery 自製簡易動畫效果、套用 Plugin 於網頁。
-* 了解 JSON/Ajax ，並串接第三方 API 設計 SPA 介面 (Google Map、OPEN DATA) -
+* CSS Framework - 對 BootStrap 、 Pure.css 有基本的認知。
 
 ### Git/GitHub
 
