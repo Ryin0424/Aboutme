@@ -22,7 +22,7 @@
 
 * 對原生 Javascript 有基礎的了解，目前針對Vue.js學習中。
 * CSS Framework - 對 BootStrap 、 Pure.css 有初步的認知。
-* jQuery - 可使用 jQuery 自製簡易動畫效果、套用 plugin 於網頁。
+* jQuery - 可使用 jQuery 自製簡易動畫效果、套用 Plugin 於網頁。
 * 了解 JSON/Ajax ，並串接第三方 API 設計 SPA 介面 (Google Map、OPEN DATA) -
 
 ### Git/GitHub
@@ -43,6 +43,7 @@
 ### Lorem Coffee - https://ryin0424.github.io/loremcoffee/
 - ##### 首支RWD自刻版練習
 - 自刻 RWD版型
+- 套用第三方Plugin
 
 
 ### TRAVE - https://ryin0424.github.io/TRAVEL/
