@@ -37,24 +37,24 @@
 - ##### 個人簡歷
 - 使用 SCSS 編譯
 - 利用 jQuery 製作簡易動畫效果
-- 自刻 RWD版型
+- 自刻 RWD 版型
 
 
 ### Lorem Coffee - https://ryin0424.github.io/loremcoffee/
 - ##### 首支RWD自刻版練習
-- 自刻 RWD版型
-- 套用第三方Plugin
+- 自刻 RWD 版型
+- 套用第三方 Plugin
 
 
 ### TRAVE - https://ryin0424.github.io/TRAVEL/
 - ##### Card mode、grid 練習
-- 首次嘗試grid管理float
+- 首次嘗試使用 grid 格線系統管理 float
 
 
 ### BMI Calculator- https://ryin0424.github.io/BMI-Calculator/
 - ##### JS、JSON練習
 - JS迴圈練習
-- 利用JSON儲存資料進local Storage
+- 利用 JSON 儲存資料進 local Storage
 
 ***
 
