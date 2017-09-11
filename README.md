@@ -15,7 +15,7 @@
 
 * 瞭解 HTML 語意。
 * 能不倚賴 Framework 完成 CSS網頁排版 與 RWD 響應式設計。
-* 瞭解 CSS3 的 Animate、transform 跟 transition。
+* 能使用 CSS3 的 Animate、transform 跟 transition。
 * 能使用 SCSS、SASS等預處利器 規劃 Web layout 架構。
 
 ### Javascript/Framework
@@ -34,33 +34,34 @@
 ## 作品
 
 ### R-yin 我的前端路 - https://ryin0424.github.io/Aboutme/
-- ##### 個人簡歷
+個人簡歷
 - 使用 SCSS 編譯
 - 利用 jQuery 製作簡易動畫效果
 - 自刻 RWD 版型
 
 
 ### Lorem Coffee - https://ryin0424.github.io/loremcoffee/
-- ##### 首支RWD自刻版練習
+首支RWD自刻版練習
 - 自刻 RWD 版型
 - 套用第三方 Plugin
 
 
-### TRAVE - https://ryin0424.github.io/TRAVEL/
-- ##### Card mode、grid 練習
+### TRAVEL - https://ryin0424.github.io/TRAVEL/
+Card mode、grid 練習
 - 首次嘗試使用 grid 格線系統管理 float
+- 使用SASS編譯
 
 
 ### BMI Calculator- https://ryin0424.github.io/BMI-Calculator/
-- ##### JS、JSON練習
+JS、JSON練習
 - JS迴圈練習
 - 利用 JSON 儲存資料進 local Storage
 
 ***
 
 ## 關於我
-- 積極，好溝通，喜歡思考，解決當前困境。
+- 個性積極，好溝通，喜歡思考、挑戰，解決當前困境。
 - 樂於汲取新知識、嘗試新技術，累計實作經驗。
 - 擅長團隊合作，提升工作效率。
-- 接觸前端起於偶然與興趣，然而越是深入學習這塊，便越被前端炫目的技術吸引。
+- 接觸前端起於偶然與興趣，然而越是深入學習這塊領域，便越被前端炫目、新穎的技術吸引。
 - 目前雖尚未有相關的工作經驗，但期許自己能更精進於前端技術，每天都有新的成長。
