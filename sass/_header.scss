@@ -29,7 +29,7 @@
             margin-right: 8%;  
             color: #fff;
             transition:all 0.3s;
-            &:hover,&:active {
+            &:hover {
                 color: $logo_color !important;
             }
         }
@@ -46,7 +46,7 @@
         padding: 10px;
         border: 1px solid #fff;
         border-radius: 5px;
-        &:hover,&:active {
+        &:hover{
             color: $hover_color !important;
             border: 1px solid $hover_color !important;
         }
@@ -67,7 +67,7 @@
             a{
                 padding: 15px;
                 color: #fff;
-                &:hover,&:active{
+                &:hover{
                     transition: all 0.2s;
                     color: $hover_color !important;
                     letter-spacing: 3px;
@@ -116,7 +116,7 @@
         a{
             color: #fff;
             font-size: 4.5em;
-            &:hover,&:active{
+            &:hover{
                 color: $arrow_hover;
             }
         }
@@ -137,6 +137,12 @@
         li a {
             margin-right: 6%;
         }
+    }
+}
+
+@media (min-width: 769px) {
+    #header .menu-mobile{
+        display: none !important;
     }
 }
 
