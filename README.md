@@ -14,7 +14,7 @@
 ### HTML/CSS
 
 * 瞭解 HTML 語意。
-* 能夠不倚賴Framework 做出 CSS網頁排版 與 RWD 響應式設計。
+* 能不倚賴 Framework 完成 CSS網頁排版 與 RWD 響應式設計。
 * 瞭解 CSS3 的 Animate、transform 跟 transition。
 * 能使用 SCSS、SASS等預處利器 規劃 Web layout 架構。
 
