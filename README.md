@@ -16,7 +16,7 @@
 * 瞭解 HTML 語意。
 * 能不倚賴 Framework 完成 CSS網頁排版 與 RWD 響應式設計。
 * 能使用 CSS3 的 Animate、transform 跟 transition。
-* 能使用 SCSS、SASS等預處利器 規劃 Web layout 架構。
+* 能使用 SCSS、SASS等預處理器 規劃 Web layout 架構。
 
 ### Javascript/Framework
 
@@ -28,31 +28,34 @@
 ### Git/GitHub
 
 * 能夠使用 GitHub Pages 建立一個靜態網頁。
+* 使用Git版本控制 (commit、branch...等)。
+
 
 ***
 
 ## 作品
 
-### R-yin 我的前端路 - https://ryin0424.github.io/Aboutme/
+### [R-yin 我的前端路](https://ryin0424.github.io/Aboutme/)
 個人簡歷
 - 使用 SCSS 編譯
 - 利用 jQuery 製作簡易動畫效果
 - 自刻 RWD 版型
 
 
-### Lorem Coffee - https://ryin0424.github.io/loremcoffee/
+### [Lorem Coffee](https://ryin0424.github.io/loremcoffee/)
 首支RWD自刻版練習
 - 自刻 RWD 版型
 - 套用第三方 Plugin
 
 
-### TRAVEL - https://ryin0424.github.io/TRAVEL/
+### [TRAVEL](https://ryin0424.github.io/TRAVEL/)
 Card mode、grid 練習
 - 首次嘗試使用 grid 格線系統管理 float
+- 純網頁版型練習
 - 使用SASS編譯
 
 
-### BMI Calculator- https://ryin0424.github.io/BMI-Calculator/
+### [BMI Calculator](https://ryin0424.github.io/BMI-Calculator/)
 JS、JSON練習
 - JS迴圈練習
 - 利用 JSON 儲存資料進 local Storage
